@@ -1,6 +1,7 @@
 import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { MdOutlineEventAvailable } from "react-icons/md";
+import { IoBookmarks } from "react-icons/io5";
 
 const firstContact = [
   {
@@ -17,5 +18,10 @@ const firstContact = [
     id: 3,
     name: "Opening Hours || Monday – Sunday: 24hrs",
     icons : <MdOutlineEventAvailable />
+  },
+  {
+    id: 4,
+    name: "Appointment Booking",
+    icons : <IoBookmarks />
   }
 ]
