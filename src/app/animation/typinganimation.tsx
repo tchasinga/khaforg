@@ -26,13 +26,17 @@ export function TypingAnimation({
         setI(i + 1);
       } else {
         clearInterval(typingEffect);
+        setTimeout(() => {
+          setI(0); // Reset the index
+          setDisplayedText(""); // Clear displayed text
+        }, 1000); // Optional delay before starting over
       }
     }, duration);
 
     return () => {
       clearInterval(typingEffect);
     };
-  }, [duration, i]);
+  }, [duration, i, text]);
 
   return (
     <h1
@@ -41,7 +45,7 @@ export function TypingAnimation({
         className,
       )}
     >
-      {displayedText ? displayedText : text}
+      {displayedText}
     </h1>
   );
 }
