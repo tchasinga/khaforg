@@ -72,9 +72,10 @@ export default function Aboutus() {
         </div>
       </div>
 
+     {/* New part of the sythanx is added now... */}
       <div className="w-full">
-           
       </div>
+      
     </div>
   );
 }
