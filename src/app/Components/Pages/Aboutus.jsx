@@ -12,6 +12,9 @@ export default function Aboutus() {
       </div>
 
       {/* my flex function is addded now is the containant */}
+      <div className="">
+         
+      </div>
     </div>
   );
 }
