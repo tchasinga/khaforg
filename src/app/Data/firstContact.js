@@ -31,3 +31,5 @@ const firstContact = [
     icons : <MdHealthAndSafety />
   }
 ]
+
+export default firstContact
