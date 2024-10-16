@@ -34,9 +34,9 @@ export default function Hero() {
               }}
             >
               {/* Optional text content for each slide */}
-              <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 font-bold">
+              <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 ">
                 <h1>{imagurl.title}</h1>
-                <h3 className="text-xs text-slate-100">{imagurl.description}</h3>
+                <h3 className=" text-slate-100 text-lg font-thin">{imagurl.description}</h3>
               </div>
               <div className="absolute top-[10%] right-[6%] cursor-pointer bg-blue-600 hover:bg-green-700 p-4 rounded-full" onClick={handlerClicksViews}>
               <RiContactsLine className="text-white text-2xl hover:font-bold duration-500" />
