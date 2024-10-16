@@ -1,4 +1,4 @@
-import firstContact from '@/app/Data/firstContact.js';
+import firstContact from '../../Data/firstContact';
 import React from 'react';
 import { motion } from 'framer-motion';
 

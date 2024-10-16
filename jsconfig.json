@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"] // Add this line for app folder
     }
   }
 }

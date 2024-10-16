@@ -2,7 +2,7 @@
 "use client"
 import React from "react";
 import WordRotate from "../../animation/wordrotate.tsx";
-import OurServi from "@/app/Data/OurServi.js";
+import OurServi from "../../Data/OurServi.js";
 import { GrValidate } from "react-icons/gr";
 import { motion } from "framer-motion";
 

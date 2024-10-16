@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import imageUrls from "@/app/Data/imageUrls.js";
+
 import { RiContactsLine } from "react-icons/ri";
 import Seecontact from "./Seecontact";
+import imageUrls from "../../Data/imageUrls";
 
 export default function Hero() {
   const [OpenSetSeeContact, setOpenSeeContact] = useState(false);
