@@ -5,6 +5,7 @@ import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/
 import Image from 'next/image';
 import mylogo from '../icon/image-removebg-preview-59.png'
 import 'animate.css';
+import { MdOutlineContactPhone } from "react-icons/md";
 
 const Header = () => {
     let Links =[
@@ -39,7 +40,9 @@ const Header = () => {
                         <a href={link.link} className='text-gray-800 hover:text-white duration-500'>{link.name}</a>
                     </li>))
                 }
+                <div className="md:flex flex-row items-center justify-center gap-4">
                 <button className='btn animate__shakeX animate__animated bg-blue-600 text-white md:ml-8 font-semibold px-3 py-2 rounded duration-500 md:static'>Apply now</button>
+                </div>
             </ul>
             {/* button */}
            </div>
