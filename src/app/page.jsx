@@ -1,4 +1,5 @@
-import Header from "./Components/Header";
+
+import Aboutus from "./Components/Pages/Aboutus";
 import Hero from "./Components/Pages/Hero";
 import OurServices from "./Components/Pages/OurServices";
 
@@ -8,6 +9,7 @@ export default function Home() {
       
       <Hero/> 
       <OurServices />
+      <Aboutus />
     </div>
   );
 }
