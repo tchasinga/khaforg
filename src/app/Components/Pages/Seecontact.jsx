@@ -31,14 +31,14 @@ export default function Seecontact({ handleClose }) {
 
   return (
     <motion.div 
-      className='flex flex-col items-center justify-center w-full h-screen  bg-black bg-opacity-50 z-[-9999]' // Fixed positioning and centering
+      className='flex flex-col items-center justify-center w-full h-screen fixed top-0 left-0  bg-black bg-opacity-50 z-[9999]' // Fixed positioning and centering
       initial="hidden"
       animate="visible"
       exit="hidden"
       variants={containerVariants}
       onClick={handleClose} // Handle outside click to close
     >
-      <motion.div className="max-w-md w-full bg-white p-5 rounded-xl relative z-[9999]"
+      <motion.div className="max-w-md w-full bg-white p-5 rounded-xl"
         initial="hidden"
         animate="visible"
         exit="exit" // Add exit here for smooth closing
