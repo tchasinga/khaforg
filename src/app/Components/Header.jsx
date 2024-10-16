@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <div className='w-full myblick fixed top-0 left-0'>
-           <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+           <div className='md:flex items-center justify-between bg-whiter py-4 md:px-10 px-7'>
             {/* logo section */}
             <div className="">
                <Image src={mylogo} alt="logo" className=" w-[150px] object-fill" />
@@ -28,11 +28,11 @@ const Header = () => {
                 }
             </div>
             {/* linke items */}
-            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
+            <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12' : 'top-[-490px]'}`}>
                 {
                     Links.map((link) => (
                     <li className='md:ml-8 md:my-0 my-7 font-semibold'>
-                        <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>
+                        <a href={link.link} className='text-gray-800 hover:text-white duration-500'>{link.name}</a>
                     </li>))
                 }
                 <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button>

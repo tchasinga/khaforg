@@ -7,3 +7,8 @@
   background: rgba(255, 255, 255, 0.486);
   backdrop-filter: blur(5px);
 }
+
+.bg-whiter{
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #00bfa5 100%);
+
+}
