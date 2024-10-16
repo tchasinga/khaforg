@@ -2,7 +2,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { FaHandHoldingMedical } from "react-icons/fa6";
 import { GrGroup } from "react-icons/gr";
 
-const OurServices = [
+const OurServi = [
   {
     id: 1,
     name: "in PATIENT SERVICES",
@@ -22,3 +22,5 @@ const OurServices = [
     moreLears: "Learn more",
   },
 ];
+
+export default OurServi

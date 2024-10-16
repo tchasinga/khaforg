@@ -27,7 +27,7 @@
 } */
 
 .spining {
-  animation: spin 10s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
@@ -40,4 +40,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5px;
+}
+
+.mygridtemplateTwo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 25px; /* Increased gap for better spacing */
 }
