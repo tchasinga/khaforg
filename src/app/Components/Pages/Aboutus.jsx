@@ -11,7 +11,8 @@ export default function Aboutus() {
     "Established under section 10 of the Societies Act, CHANF Community Health Services (CHANF-CNS) is based in Kitengela, Kajiado County, Kenya.",
     "We foster a comprehensive approach to well-being in the community, family, workplace, and schools, with a focus on health, nutrition, and industrial relationships.",
     "Our services extend beyond healthcare, reaching into community development, public health, and family support.",
-    "We believe that a healthy community is key to the overall development of a nation."
+    "We believe that a healthy community is key to the overall development of a nation.",
+    "To provide quality, affordable, and accessible healthcare services to the community, with a focus on health, nutrition, and industrial relationships."
   ];
 
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -74,8 +75,8 @@ export default function Aboutus() {
 
      {/* New part of the sythanx is added now... */}
       <div className="w-full">
+        <h1 className="text-3xl font-bold text-blue-600 mt-8">OUR MISSION</h1>
       </div>
-      
     </div>
   );
 }
