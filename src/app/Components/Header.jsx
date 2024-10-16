@@ -53,9 +53,10 @@ const Header = () => {
                         <MdOutlineContactPhone className='text-2xl cursor-pointer hover:text-white duration-500' onClick={handleContactClick} />
                     </div>
                 </ul>
-                {/* Show Seecontact component based on openContact state */}
-                {openContact && <Seecontact />}
             </div>
+
+             {/* Show Seecontact component based on openContact state */}
+             {openContact && <Seecontact />}
         </div>
     );
 };
