@@ -31,7 +31,7 @@ export default function Seecontact({ handleClose }) {
 
   return (
     <motion.div 
-      className='flex flex-col items-center justify-center w-full h-screen fixed top-0 left-0  bg-black bg-opacity-50 z-[9999]' // Fixed positioning and centering
+      className='absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center' // Fixed positioning and centering
       initial="hidden"
       animate="visible"
       exit="hidden"

@@ -1,64 +1,90 @@
-/* eslint-disable react/jsx-key */
 "use client";
-import React, { useState } from 'react';
-import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
-import mylogo from '../icon/image-removebg-preview-59.png';
-import 'animate.css';
-import { MdOutlineContactPhone } from "react-icons/md";
-import Seecontact from './Pages/Seecontact';
+import React from "react";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import mylogo from '../icon/image-removebg-preview-59.png'
 
-const Header = () => {
-    const Links = [
-        { name: "HOME", link: "/" },
-        { name: "OUR SERVICES", link: "/" },
-        { name: "ABOUT US", link: "/" },
-        { name: "OUR DOCTORS", link: "/" },
-        { name: "CONTACT US", link: "/" },
-        { name: "TRAINING", link: "/" },
-        { name: "FAQ", link: "/" },
-    ];
-    const [open, setOpen] = useState(false);
-    const [openContact, setOpenContact] = useState(false);
 
-    // Event handler to toggle contact modal
-    const handleContactClick = () => {
-        setOpenContact(prev => !prev);
-    };
+export default function Navbars() {
+  const [open, setOpen] = useState(false);
+  const menuLinks = [
+    { name: "HOME", link: "/" },
+    { name: "OUR SERVICES", link: "/" },
+    { name: "ABOUT US", link: "/" },
+    { name: "OUR DOCTORS", link: "/" },
+    { name: "CONTACT US", link: "/" },
+    { name: "TRAINING", link: "/" },
+    { name: "FAQ", link: "/" },
+  ];
 
-    return (
-        <div className='w-full myblick sticky top-0 left-0'>
-            <div className='md:flex items-center justify-between bg-whiter py-4 md:px-10 px-7'>
-                {/* logo section */}
-                <div className="">
-                    <Image src={mylogo} alt="logo" className=" w-[150px] object-fill" />
-                </div>
-                {/* Menu icon */}
-                <div onClick={() => setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
-                    {
-                        open ? <XMarkIcon /> : <Bars3BottomRightIcon />
-                    }
-                </div>
-                {/* link items */}
-                <ul className={`md:flex flex-wrap md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[100000] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-12 bg-blue-400' : 'top-[-490px]'}`}>
-                    {
-                        Links.map((link) => (
-                            <li className='md:ml-8 md:my-0 my-7 font-semibold text-sm'>
-                                <a href={link.link} className='text-gray-800 hover:text-white duration-500'>{link.name}</a>
-                            </li>
-                        ))
-                    }
-                    <div className="flex items-center gap-3">
-                        <button className='btn animate__shakeX animate__animated bg-blue-600 text-white md:ml-8 font-semibold px-3 py-2 rounded duration-500 md:static'>Apply now</button>
-                        <MdOutlineContactPhone className='text-2xl cursor-pointer hover:text-white duration-500' onClick={handleContactClick} />
-                    </div>
-                </ul>
-            </div>
-
-             {/* Show Seecontact component based on openContact state */}
-             {openContact && <Seecontact />}
+  return (
+    <nav className="fixed font-poppins font-sans w-full left-0 top-0 z-[9999] mypad myblick">
+      <div className="flex items-center justify-between">
+        <div className="mx-7 w-[150px]">
+          <Image src={mylogo} alt="logo" className=" w-[150px] object-fill" />
         </div>
-    );
-};
 
-export default Header;
+        <div className="text-gray-900 md:block hidden px-7 py-2 font-medium">
+          <ul className="flex items-center flex-wrap font-poppins font-sans p-5 text-sm">
+            {menuLinks.map((menu, i) => (
+              <li
+                key={i}
+                className="px-3 text-slate-950 font-poppins font-sans hover:text-cyan-600"
+              >
+                <Link href={menu.link}>{menu.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div
+          onClick={() => setOpen(!open)}
+          className={`z-[999] ${
+            open ? "text-gray-200" : "text-gray-100"
+          } text-3xl md:hidden m-5`}
+        >
+          <svg
+            className="w-8 h-8 text-slate-900"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            {open ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              ></path>
+            )}
+          </svg>
+        </div>
+        <div
+          className={`md:hidden text-gray-900 absolute w-full h-screen px-7 py-2 font-medium bg-blue-500 top-0 duration-300 ${
+            open ? "right-0" : "right-[-100%]"
+          }`}
+        >
+          <ul className="flex flex-col justify-center h-full text-white gap-10 py-2 text-lg">
+            {menuLinks.map((menu, i) => (
+              <li
+                onClick={() => setOpen(false)}
+                key={i}
+                className="px-6 hover:text-slate-900"
+              >
+                <Link href={menu.link}>{menu.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}
