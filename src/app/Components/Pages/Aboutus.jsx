@@ -2,8 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { TypingAnimation } from "../../animation/typinganimation";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+import newImgCartoon from '../../Images/Kitengela-Kajiado-Cou06_2024-21_45_20.png'
 
 export default function Aboutus() {
+ 
   const textChanger = [
     "Established under section 10 of the Societies Act, CHANF Community Health Services (CHANF-CNS) is based in Kitengela, Kajiado County, Kenya.",
     "We foster a comprehensive approach to well-being in the community, family, workplace, and schools, with a focus on health, nutrition, and industrial relationships.",
@@ -31,16 +34,16 @@ export default function Aboutus() {
 
   return (
     <div className="py-[3%] max-w-screen-xl mx-auto">
-      <div className="text-3xl text-blue-600 font-bold">
+      <div className="text-3xl  font-bold text-blue-600">
         <TypingAnimation text="learn more about us" />
         <hr className="w-20" />
       </div>
 
       {/* Text content with smooth transition */}
-      <div className="mt-8 bg-blue-600 p-6 rounded-md text-white w-full">
+      <div className="mt-8 flex  justify-between gap-10  rounded-md text-white ">
 
         {/* First flex is added now...*/}
-        <div className="flex flex-col justify-center items-start">
+        <div className="flex flex-col justify-center  bg-blue-600 p-4 rounded-bl-3xl rounded-tr-3xl w-[50%]">
           <div className="py-3">
             <h1 className="text-2xl font-bold">ABOUT US</h1>
             <h1 className="text-xl">CHANF Community Health Services</h1>
@@ -64,7 +67,9 @@ export default function Aboutus() {
         </div>
 
         {/* My second flex is added now */}
-        
+        <div className="w-[50%]">
+        <Image src={newImgCartoon} alt="thecode"  />
+        </div>
       </div>
     </div>
   );

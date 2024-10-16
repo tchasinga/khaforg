@@ -30,7 +30,7 @@ export default function Hero() {
             <div
               className="h-[650px] relative object-cover"
               style={{
-                background: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url(${imagurl.url}) center no-repeat`,
+                background: `linear-gradient(to right, rgba(0, 123, 255, 0.9), rgba(173, 216, 230, 0)), url(${imagurl.url}) center no-repeat`,
                 backgroundSize: "cover",
               }}
             >

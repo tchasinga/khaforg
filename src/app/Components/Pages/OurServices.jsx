@@ -50,7 +50,6 @@ export default function OurServices() {
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
-        viewport={{ once: true }} // Ensure animation runs once when in view
       >
         {OurServi.map((items, index) => (
           // Motion div for each item
