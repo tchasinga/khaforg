@@ -12,12 +12,12 @@
   background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #00bfa5 100%);
 }
 
-.animate__shakeX{
-  /* animation-iteration-count: infinite; */
+/* .animate__shakeX{
+  animation-iteration-count: infinite;
   animation-delay: 4s;
   --animate-duration: 4.5s;
   animation-duration: 4.5s;
-}
+} */
 
 .spining {
   animation: spin 10s linear infinite;
