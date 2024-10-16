@@ -4,6 +4,7 @@ import { TypingAnimation } from "../../animation/typinganimation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import newImgCartoon from '../../Images/Kitengela-Kajiado-Cou06_2024-21_45_20.png'
+import newAccentedImg from "../../Images/Groupone/CHANF-OSH-PROFILE-1-34-e1719817089149.png"
 
 export default function Aboutus() {
  
@@ -74,8 +75,11 @@ export default function Aboutus() {
       </div>
 
      {/* New part of the sythanx is added now... */}
-      <div className="w-full">
-        <h1 className="text-3xl font-bold text-blue-600 mt-8">OUR MISSION</h1>
+      <div className="w-full pt-10">
+        <h1 className="text-3xl font-bold text-blue-600 mt-8">Accredited by :</h1>
+        <div className="w-full flex justify-center items-center pt-5">
+        <Image src={newAccentedImg} alt="thecode"  />
+        </div>
       </div>
     </div>
   );
