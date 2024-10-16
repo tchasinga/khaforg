@@ -71,6 +71,10 @@ export default function Aboutus() {
         <Image src={newImgCartoon} alt="thecode"  />
         </div>
       </div>
+
+      <div className="w-full">
+           
+      </div>
     </div>
   );
 }
