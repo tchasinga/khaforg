@@ -18,8 +18,8 @@ const Header = () => {
         <div className='w-full myblick fixed top-0 left-0'>
            <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
             {/* logo section */}
-            <div className="w-50 h-50 aspect-w-1 aspect-h-1">
-               <Image src={mylogo} alt="logo" className="w-full h-full object-cover" />
+            <div className="">
+               <Image src={mylogo} alt="logo" className=" w-[150px] object-fill" />
             </div>
             {/* Menu icon */}
             <div onClick={()=>setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
