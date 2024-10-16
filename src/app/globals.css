@@ -18,3 +18,13 @@
   --animate-duration: 2.5s;
   animation-duration: 2.5s;
 }
+
+.spining {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
