@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image';
 import mylogo from '../icon/image-removebg-preview-59.png'
+import 'animate.css';
 
 const Header = () => {
     let Links =[
