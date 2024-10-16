@@ -15,9 +15,11 @@ export default function OurServices() {
 
     
   return (
-    <div className=''>
+    <div className='py-[5%] max-w-screen-2xl mx-auto'>
           <div className="">
-          <WordRotate words={words} />
+          <h1 className="text-slate-800 text-2xl font-bold">
+            <WordRotate words={words} />
+          </h1>
           </div>
     </div>
   )
