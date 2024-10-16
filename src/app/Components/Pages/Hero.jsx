@@ -21,7 +21,7 @@ export default function Hero() {
   ];
 
   return (
-    <div>
+    <div className="">
       <Swiper
         modules={[Navigation, Autoplay]} // Use modules here
         navigation
