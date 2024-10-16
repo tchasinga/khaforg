@@ -8,7 +8,7 @@ import 'animate.css';
 import { MdOutlineContactPhone } from "react-icons/md";
 
 const Header = () => {
-    let Links =[
+    const Links =[
         {name:"HOME",link:"/"},
         {name:"OUR SERVICES",link:"/"},
         {name:"ABOUT US",link:"/"},
@@ -17,7 +17,8 @@ const Header = () => {
         {name:"TRAINING",link:"/"},
         {name:"FAQ",link:"/"},
       ];
-      let [open, setOpen] =useState(false);
+      const [open, setOpen] =useState(false);
+      const [openContact,setOpenContact]=useState(false);
 
     return (
         <div className='w-full myblick fixed top-0 left-0'>
@@ -40,8 +41,9 @@ const Header = () => {
                         <a href={link.link} className='text-gray-800 hover:text-white duration-500'>{link.name}</a>
                     </li>))
                 }
-                <div className="md:flex flex-row items-center justify-center gap-4">
+                <div className="flex items-center gap-3">
                 <button className='btn animate__shakeX animate__animated bg-blue-600 text-white md:ml-8 font-semibold px-3 py-2 rounded duration-500 md:static'>Apply now</button>
+                <MdOutlineContactPhone  className='text-2xl'/>
                 </div>
             </ul>
             {/* button */}
