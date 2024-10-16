@@ -32,7 +32,7 @@ export default function OurServices() {
             <div>
               <h1 className="uppercase text-xl font-bold text-blue-700">{items.name}</h1>
             </div>
-            <div className="">
+            <div className="bg-blue-600 hover:bg-green-700 p-3 w-[150px] flex justify-center items-center rounded-2xl duration-500 cursor-pointer text-white ">
               <p>{items.moreLears}</p>
             </div>
             <div className="absolute top-[-10%] right-[-4%] spining cursor-pointer text-white text-2xl bg-blue-600 hover:bg-green-700 p-10 rounded-full">
