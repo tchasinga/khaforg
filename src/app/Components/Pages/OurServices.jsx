@@ -39,7 +39,7 @@ export default function OurServices() {
   return (
     <div className="py-[3%] max-w-screen-xl mx-auto">
       <div className="">
-        <h1 className="text-slate-800 text-2xl font-bold flex justify-center uppercase pb-[4%]">
+        <h1 className="text-blue-600 text-2xl font-bold flex justify-center uppercase pb-[4%]">
           <WordRotate words={words} />
         </h1>
       </div>
