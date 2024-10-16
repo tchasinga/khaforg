@@ -6,6 +6,7 @@ export default function Home() {
     <div className="">
       
       <Hero/> 
+      <h1>balolebwami</h1>
     </div>
   );
 }
