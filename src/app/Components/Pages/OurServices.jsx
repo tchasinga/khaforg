@@ -1,10 +1,23 @@
 import React from 'react'
+import WordRotate from "../../animation/wordrotate.tsx";
 
+const words = [
+  "Dev service",
+  "Frontend",
+  "Backend",
+  "App dev",
+  "Database",
+  "Apis config",
+  "Design",
+  "Ui design",
+];
 export default function OurServices() {
+
+    
   return (
     <div className=''>
           <div className="">
-              <h1>Our Services</h1>
+          <WordRotate words={words} />
           </div>
     </div>
   )
