@@ -2,6 +2,8 @@
 "use client";
 import React, { useState } from 'react';
 import { BookOpenIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image';
+import mylogo from '../icon/image-removebg-preview-59.png'
 
 const Header = () => {
     let Links =[
@@ -17,8 +19,7 @@ const Header = () => {
            <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
             {/* logo section */}
             <div className='font-bold text-2xl cursor-pointer flex items-center gap-1'>
-                <BookOpenIcon className='w-7 h-7 text-blue-600'/>
-                <span>Inscribe</span>
+                <Image src={mylogo} width={50} height={50} alt="logo" className=''/>
             </div>
             {/* Menu icon */}
             <div onClick={()=>setOpen(!open)} className='absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7'>
