@@ -15,12 +15,16 @@ interface WordRotateProps {
 
 export default function WordRotate({
   words,
-  duration = 3500,
+  duration = 2500,
   framerProps = {
     initial: { opacity: 0, y: -50 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: 50 },
-    transition: { duration: 0.25, type: "spring" },
+    transition: {
+      duration: 0.6, // Increased duration for smoother animation
+      ease: [0.25, 0.46, 0.45, 0.94], // Smooth cubic-bezier easing
+      type: "tween" // Change to 'tween' for a more fluid transition
+    },
   },
   className,
 }: WordRotateProps) {

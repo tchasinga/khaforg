@@ -4,7 +4,7 @@ import WordRotate from "../../animation/wordrotate.tsx";
 const words = [
   "our services",
   "we provide services",
-  "PATIENT SERVICES",
+  "in PATIENT SERVICES",
   "OUT PATIENT SERVICES",
   "TRAINING SERVICES",
 ];

@@ -7,29 +7,41 @@ import { MdHealthAndSafety } from "react-icons/md";
 const firstContact = [
   {
     id: 1,
-    name: "Emergency",
-    icons : <IoCallOutline />
+    name: (
+      <>
+        Emergency: <br /> +254 741 769 558
+      </>
+    ),
+    icons: <IoCallOutline />
   },
   {
     id: 2,
-    name: "Email: reception@chan-f.or.ke",
-    icons : <MdOutlineMail />
+    name: (
+      <>
+        Email: <br /> reception@chan-f.or.ke
+      </>
+    ),
+    icons: <MdOutlineMail />
   },
   {
     id: 3,
-    name: "Opening Hours || Monday – Sunday: 24hrs",
-    icons : <MdOutlineEventAvailable />
+    name: (
+      <>
+        Opening Hours <br /> Monday – Sunday: 24hrs
+      </>
+    ),
+    icons: <MdOutlineEventAvailable />
   },
   {
     id: 4,
-    name: "Appointment Booking",
-    icons : <IoBookmarks />
+    name: <>Appointment Booking</>,
+    icons: <IoBookmarks />
   },
   {
     id: 5,
-    name: "Intake Ongoing",
-    icons : <MdHealthAndSafety />
+    name: <>Intake Ongoing</>,
+    icons: <MdHealthAndSafety />
   }
-]
+];
 
-export default firstContact
+export default firstContact;
