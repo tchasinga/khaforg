@@ -27,7 +27,7 @@ const Header = () => {
     };
 
     return (
-        <div className='w-full myblick fixed top-0 left-0'>
+        <div className='w-full myblick sticky top-0 left-0'>
             <div className='md:flex items-center justify-between bg-whiter py-4 md:px-10 px-7'>
                 {/* logo section */}
                 <div className="">
