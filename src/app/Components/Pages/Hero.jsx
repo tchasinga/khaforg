@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <div className="pt-[4%]">
       <Swiper
-        modules={[Navigation, Autoplay]} // Use modules here
+        modules={[Navigation, Autoplay]} 
         navigation
         autoplay={{
           delay: 2500,
