@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import { Navigation } from "swiper/modules";
-import "swiper/css/bundle";
-import SwiperCore from "swiper";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
 
 export default function Hero() {
-  SwiperCore.use([Navigation]);
   const imageUrls = [
     "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/863977/pexels-photo-863977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -24,7 +22,14 @@ export default function Hero() {
 
   return (
     <div>
-      <Swiper navigation>
+      <Swiper
+        modules={[Navigation, Autoplay]} // Use modules here
+        navigation
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+      >
         {imageUrls.map((imagurl) => (
           <SwiperSlide key={imagurl}>
             <div
@@ -34,10 +39,11 @@ export default function Hero() {
                 backgroundSize: "cover",
               }}
             >
+              {/* Optional text content for each slide */}
               {/* <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 font-bold">
-                     <h1>{sharing.publicrole}</h1>
-                     <h3 className="text-xs text-gray-500">{sharing.email}</h3>
-                  </div> */}
+                <h1>Slide Title</h1>
+                <h3 className="text-xs text-gray-500">Additional Information</h3>
+              </div> */}
             </div>
           </SwiperSlide>
         ))}

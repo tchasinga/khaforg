@@ -28,7 +28,7 @@ export default function Seecontact() {
 
   return (
     <motion.div 
-      className='flex flex-col items-center justify-center w-full h-screen bg-black opacity-100 absolute z-[9999]'
+      className='flex flex-col items-center justify-center w-full h-screen bg-black opacity-100 absolute z-[-9999]'
       initial="hidden"
       animate="visible"
       exit="hidden"
