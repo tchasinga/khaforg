@@ -130,8 +130,8 @@ export default function Givenservices() {
                   <h1 className='text-white'>{ItemsData.icons}</h1>
                </div>
                </div>
-               <div className="">
-                   <h1 className="">{ItemsData.title}</h1>
+               <div className="flex items-center justify-center pt-14">
+                   <h1 className="text-2xl font-semibold text-blue-500">{ItemsData.title}</h1>
                </div>
             </div>
           ))
