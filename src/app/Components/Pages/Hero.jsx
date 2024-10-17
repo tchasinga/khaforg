@@ -42,7 +42,7 @@ export default function Hero() {
               </div>
 
               {/* my new side of design */}
-              <div className="absolute flex items-center gap-5 top-[10%] p-4 justify-center">
+              <div className="absolute flex items-center gap-5 top-[88%] left-[64%] p-4 justify-center myblicker">
 
                 <div className="flex flex-col items-center">
                   <h1>20+</h1>
