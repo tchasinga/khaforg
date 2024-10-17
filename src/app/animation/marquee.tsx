@@ -1,5 +1,3 @@
-
-
 import { cn } from "../../lib/utils";
 
 interface MarqueeProps {
@@ -12,7 +10,7 @@ interface MarqueeProps {
   [key: string]: any;
 }
 
-export default function Marquee({
+export function Marquee({
   className,
   reverse,
   pauseOnHover = false,

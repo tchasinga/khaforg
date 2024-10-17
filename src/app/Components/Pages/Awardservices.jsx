@@ -1,4 +1,5 @@
 import React from "react";
+import MarqueeDemo from "../Pages/MarqueeDemo";
 
 export default function Awardservices() {
   return (
@@ -9,7 +10,7 @@ export default function Awardservices() {
         </h1>
         <div className="bg-blue-600 w-2/12 h-1 text-start"></div>
       </div>
-      
+      <MarqueeDemo />
     </div>
   );
 }
