@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.myblick{
+  background: rgba(255, 255, 255, 0.486);
+  backdrop-filter: blur(3px);
+}
+
+.bg-whiter{
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #00bfa5 100%);
+}
+
+/* .animate__shakeX{
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+  --animate-duration: 4.5s;
+  animation-duration: 4.5s;
+} */
+
+.spining {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.mygridtemplate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+}
+
+.mygridtemplateTwo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 25px; /* Increased gap for better spacing */
+}
