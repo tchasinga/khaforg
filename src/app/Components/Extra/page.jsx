@@ -4,6 +4,7 @@ import WordRotate from '../../animation/wordrotate'
 import AddingServicesData from '../../Data/AddingServicesData.js'
 import { MdAttachEmail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
+import InPatientService from '../../Data/InPatientService.js'
 
 import Image from 'next/image';
 import { FaWhatsapp } from "react-icons/fa";
@@ -25,6 +26,14 @@ const words = [
     "Psychiatry",
     "Endoscopy",
 ];
+
+const texting =[
+  "Operation Theatre",
+  "Paeditric Care",
+  "Maternity Care",
+  "Critical care",
+  "Adult ward"
+]
 
 export default function Givenservices() {
   return (
@@ -103,10 +112,27 @@ export default function Givenservices() {
         ))}
       </div>
 
+
       {/* Second card grid  */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        {/* Title with sparkles */}
+        <div className="">
+        <h1 className="text-blue-600 text-2xl font-bold flex justify-center uppercase py-[4%]">
+          <WordRotate words={texting} />
+        </h1>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto pb-[5%]">
         {
-          
+          InPatientService.map((ItemsData, index) =>(
+            <div key={index} className='border rounded-3xl h-[300px] flex flex-col'>
+               <div className="bg-blue-700 relative h-[150px] rounded-b-full">
+               <div className="flex justify-center items-center absolute right-0 left-28 top-24 text-center bg-green-600 p-4 rounded-full text-5xl w-20 h-20">
+                  <h1 className='text-white'>{ItemsData.icons}</h1>
+               </div>
+               </div>
+               
+            </div>
+          ))
         }
       </div>
     </div>
