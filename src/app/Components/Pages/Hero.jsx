@@ -42,6 +42,7 @@ export default function Hero() {
               </div>
 
               {/* my new side of design */}
+              
             </div>
           </SwiperSlide>
         ))}
