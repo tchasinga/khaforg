@@ -53,3 +53,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px; /* Increased gap for better spacing */
 }
+
+.myb Img{
+  border-radius: 20px;
+}

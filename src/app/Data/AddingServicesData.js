@@ -98,7 +98,7 @@ const AddingServicesData = [
         id: 12,
         myImg : ImgThree,
         title   : "Optician",
-        description: "Our opticians are here to help you see clearly, ensuring your eye health is in the best hands.",
+        description: "Our opticians are here to help you see clearly, ensuring your eye health is in the best hands, and good more ensurence come with it ",
         rating: generateGoodRating()
     },
     {
