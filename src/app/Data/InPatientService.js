@@ -31,3 +31,5 @@ const InPatientService = [
         title : "Adult ward"
     }
 ]
+
+export default InPatientService
