@@ -56,17 +56,21 @@ export default function Givenservices() {
 
                 <div className="flex gap-1 items-center">
                 {[...Array(Math.floor(items.rating))].map((_, index) => (
-    <svg key={index} className="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 .587l3.668 7.431 8.195 1.187-5.92 5.764 1.394 8.174L12 18.897l-7.337 3.85 1.394-8.174-5.92-5.764 8.195-1.187L12 .587z" />
-    </svg>
-))}
+            <svg key={index} className="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .587l3.668 7.431 8.195 1.187-5.92 5.764 1.394 8.174L12 18.897l-7.337 3.85 1.394-8.174-5.92-5.764 8.195-1.187L12 .587z" />
+           </svg>
+           ))}
                 </div>
               </div>
 
                <p className="text-gray-500 py-2 text-sm">{items.description}</p>
               </div>
 
+              <div className="" >
+                
+              </div>
             </div>
+            
           ))}
         </div>
       </div>
