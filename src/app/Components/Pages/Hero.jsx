@@ -42,26 +42,26 @@ export default function Hero() {
               </div>
 
               {/* my new side of design */}
-              <div className="absolute flex items-center gap-5 top-[88%] left-[64%] p-4 justify-center myblicker">
+              <div className="absolute flex items-end gap-5 top-[88%] right-0 justify-end p-4  myblicker">
 
-                <div className="flex flex-col items-center">
-                  <h1>20+</h1>
-                  <p className="">Best achivement</p>
+                <div className="flex flex-col text-blue-600 items-center">
+                  <h1 className="text-xl font-bold">20+</h1>
+                  <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
-               <div className="">
-                  <h1>20+</h1>
-                  <p className="">Best achivement</p>
+                <div className="flex flex-col text-blue-600 items-center">
+                  <h1 className="text-xl font-bold">20+</h1>
+                  <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
-               <div className="">
-                  <h1>20+</h1>
-                  <p className="">Best achivement</p>
+                <div className="flex flex-col text-blue-600 items-center">
+                  <h1 className="text-xl font-bold">20+</h1>
+                  <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
-               <div className="">
-                  <h1>20+</h1>
-                  <p className="">Best achivement</p>
+                <div className="flex flex-col text-blue-600 items-center">
+                  <h1 className="text-xl font-bold">20+</h1>
+                  <p className="font-semibold text-sm">Best achivement</p>
                 </div>
               </div>
             </div>
