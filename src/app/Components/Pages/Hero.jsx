@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { RiContactsLine } from "react-icons/ri";
@@ -11,26 +11,23 @@ export default function Hero() {
   const [OpenSetSeeContact, setOpenSeeContact] = useState(false);
  
   const handlerClicksViews = () => {
-    setOpenSeeContact(true)
-  }
+    setOpenSeeContact(true);
+  };
 
   return (
     <div className="pt-[4%]">
       <Swiper
-        modules={[Navigation, Autoplay]} 
+        modules={[Navigation]} 
         navigation
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
       >
         {imageUrls.map((imagurl) => (
           <SwiperSlide key={imagurl}>
             <div
-              className="h-[650px] relative object-cover"
+              className="h-[650px] relative object-fill"
               style={{
                 background: `linear-gradient(to right, rgba(0, 123, 255, 0.9), rgba(173, 216, 230, 0)), url(${imagurl.url}) center no-repeat`,
                 backgroundSize: "cover",
+                objectFit: "fill",
               }}
             >
               {/* Optional text content for each slide */}
@@ -39,7 +36,7 @@ export default function Hero() {
                 <h3 className=" text-slate-100 text-lg font-thin">{imagurl.description}</h3>
               </div>
               <div className="absolute top-[10%] right-[6%] cursor-pointer bg-blue-600 hover:bg-green-700 p-4 rounded-full" onClick={handlerClicksViews}>
-              <RiContactsLine className="text-white text-2xl hover:font-bold duration-500" />
+                <RiContactsLine className="text-white text-2xl hover:font-bold duration-500" />
               </div>
             </div>
           </SwiperSlide>
