@@ -18,7 +18,7 @@ import ImgNine from '../Images/Groupone/power.jpg'
 import ImgTen from '../Images/Groupone/pps-e1719813999374.jpg'
 
 // Import Swiper styles
-import 'swiper/css';
+
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
@@ -32,89 +32,7 @@ export default function Slider() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   
   return (
-    <>
-      <Swiper
-        style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
-        }}
-        spaceBetween={10}
-        navigation={true}
-        thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper23"
-      >
-     <SwiperSlide>
-          <Image src={ImgOne} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgTwo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgThree} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgFour} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgFive} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgSix} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgSeven} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgEight} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgNine} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgTen} />
-        </SwiperSlide>
-      </Swiper>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-      >
- <SwiperSlide>
-          <Image src={ImgOne} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgTwo} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgThree} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgFour} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgFive} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgSix} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgSeven} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgEight} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgNine} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image src={ImgTen} />
-        </SwiperSlide>
-      </Swiper>
-    </>
+    <div>
+    </div>
   );
 }

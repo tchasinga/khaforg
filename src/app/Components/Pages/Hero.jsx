@@ -7,6 +7,7 @@ import { RiContactsLine } from "react-icons/ri";
 import Seecontact from "./Seecontact";
 import imageUrls from "../../Data/imageUrls";
 import CountUp from 'react-countup';
+import 'swiper/css';
 
 export default function Hero() {
   const [OpenSetSeeContact, setOpenSeeContact] = useState(false);

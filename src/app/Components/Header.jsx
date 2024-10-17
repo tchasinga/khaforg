@@ -30,7 +30,7 @@ export default function Navbars() {
             {menuLinks.map((menu, i) => (
               <li
                 key={i}
-                className="px-3 text-slate-950 font-poppins font-sans hover:text-cyan-600"
+                className="px-3 text-slate-950 font-poppins font-sans hover:text-white"
               >
                 <Link href={menu.link}>{menu.name}</Link>
               </li>
