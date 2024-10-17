@@ -32,9 +32,9 @@ export default function Hero() {
               }}
             >
               {/* Optional text content for each slide */}
-              <div className="text-white text-4xl absolute bottom-1/4 left-[4%] px-5 ">
+              <div className="text-white text-5xl absolute bottom-1/4 left-[4%]  ">
                 <h1 className="font-bold">{imagurl.title}</h1>
-               <div className="w-[50%]">
+               <div className="w-[60%]">
                <h3 className=" text-slate-100 text-lg font-normal">{imagurl.description}</h3>
                </div>
               </div>
