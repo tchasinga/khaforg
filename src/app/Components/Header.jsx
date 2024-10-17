@@ -10,7 +10,7 @@ export default function Navbars() {
   const [open, setOpen] = useState(false);
   const menuLinks = [
     { name: "HOME", link: "/" },
-    { name: "OUR SERVICES", link: "/" },
+    { name: "OUR SERVICES", link: "./Extra/page.jsx" },
     { name: "ABOUT US", link: "/" },
     { name: "OUR DOCTORS", link: "/" },
     { name: "CONTACT US", link: "/" },
