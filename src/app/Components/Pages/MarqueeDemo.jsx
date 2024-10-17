@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { cn } from "../../../lib/utils";
-import Marquee from "../../animation/marquee";
+import Marquee from "../../animation/magicui/marquee";
 
 const reviews = [
   {
