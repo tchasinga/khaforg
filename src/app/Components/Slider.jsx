@@ -17,22 +17,15 @@ import ImgEight from '../Images/Groupone/pacis-2.jpg'
 import ImgNine from '../Images/Groupone/power.jpg'
 import ImgTen from '../Images/Groupone/pps-e1719813999374.jpg'
 
-// Import Swiper styles
 
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-
-import './styles.css';
-
-// import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 export default function Slider() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  
+
   return (
-    <div>
+    <div className=''>
+        {
+
+        }
     </div>
   );
 }
