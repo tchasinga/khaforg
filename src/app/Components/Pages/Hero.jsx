@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/bundle";
 
 import { RiContactsLine } from "react-icons/ri";
 import Seecontact from "./Seecontact";
