@@ -31,13 +31,17 @@ export default function Hero() {
               }}
             >
               {/* Optional text content for each slide */}
-              <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 ">
-                <h1>{imagurl.title}</h1>
-                <h3 className=" text-slate-100 text-lg font-thin">{imagurl.description}</h3>
+              <div className="text-white text-4xl absolute bottom-1/4 left-[4%] px-5 ">
+                <h1 className="font-bold">{imagurl.title}</h1>
+               <div className="w-[50%]">
+               <h3 className=" text-slate-100 text-lg font-normal">{imagurl.description}</h3>
+               </div>
               </div>
               <div className="absolute top-[10%] right-[6%] cursor-pointer bg-blue-600 hover:bg-green-700 p-4 rounded-full" onClick={handlerClicksViews}>
                 <RiContactsLine className="text-white text-2xl hover:font-bold duration-500" />
               </div>
+
+              {/* my new side of design */}
             </div>
           </SwiperSlide>
         ))}

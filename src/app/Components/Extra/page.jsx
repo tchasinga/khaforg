@@ -30,9 +30,9 @@ export default function Givenservices() {
   return (
     <div className='pt-[6%] max-w-screen-xl mx-auto'>
       {/* Title with sparkles */}
-      <div className="text-3xl py-[3%] uppercase font-bold text-blue-600 text-center">
+      <div className="text-3xl py-[3%] uppercase font-bold text-blue-600 text-start">
         <SparklesText text="OUR SERVICES" />
-        <hr className="w-20 mx-auto border-blue-600" />
+        <hr className="w-20 border-blue-600" />
       </div>
 
       {/* Rotating words */}
@@ -84,16 +84,18 @@ export default function Givenservices() {
                   Book now
                 </button>
 
-                <div className="p-3 rounded-full bg-green-600">
-                    <FaWhatsapp className='text-white text-xl  rounded-full bg-green-600'/>
+                <div className="p-3 rounded-full bg-green-600 cursor-pointer hover:bg-blue-600">
+                    <FaWhatsapp className='text-white text-xl  rounded-full '/>
                 </div>
 
-                <div className="p-3 rounded-full bg-green-600">
-                    <MdAttachEmail className='text-white text-xl  rounded-full bg-green-600'/>
+                <a target="_blank" href={`mailto:reception@chan-f.or.ke`} className='' >
+                <div className="p-3 rounded-full bg-green-600 hover:bg-blue-600 duration-500">
+                    <MdAttachEmail className='text-white text-xl  rounded-full'/>
                 </div>
+                </a>
 
-                <div className="p-3 rounded-full bg-green-600">
-                    <IoCallOutline className='text-white text-xl  rounded-full bg-green-600'/>
+                <div className="p-3 rounded-full bg-green-600 cursor-pointer hover:bg-blue-600 duration-500">
+                    <IoCallOutline className='text-white text-xl  rounded-full'/>
                 </div>
               </div>
             </div>

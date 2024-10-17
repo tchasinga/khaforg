@@ -1,6 +1,6 @@
 const imageUrls = [
   {
-    url: "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    url: "https://firebasestorage.googleapis.com/v0/b/blogs-sharing.appspot.com/o/pexels-rdne-6129681.jpg?alt=media&token=34e198bf-e349-4437-93cb-c76c3029531a",
     title: "Caring Medical Staff",
     description:
       "Our compassionate team is dedicated to ensuring your comfort and well-being every step of the way.",
