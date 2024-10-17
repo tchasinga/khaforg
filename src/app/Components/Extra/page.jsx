@@ -130,7 +130,9 @@ export default function Givenservices() {
                   <h1 className='text-white'>{ItemsData.icons}</h1>
                </div>
                </div>
-               
+               <div className="">
+                   <h1 className="">{ItemsData.title}</h1>
+               </div>
             </div>
           ))
         }
