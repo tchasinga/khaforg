@@ -42,7 +42,28 @@ export default function Hero() {
               </div>
 
               {/* my new side of design */}
-              
+              <div className="absolute flex items-center gap-5 top-[10%] p-4 justify-center">
+
+                <div className="flex flex-col items-center">
+                  <h1>20+</h1>
+                  <p className="">Best achivement</p>
+                </div>
+
+               <div className="">
+                  <h1>20+</h1>
+                  <p className="">Best achivement</p>
+                </div>
+
+               <div className="">
+                  <h1>20+</h1>
+                  <p className="">Best achivement</p>
+                </div>
+
+               <div className="">
+                  <h1>20+</h1>
+                  <p className="">Best achivement</p>
+                </div>
+              </div>
             </div>
           </SwiperSlide>
         ))}
