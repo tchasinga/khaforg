@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { RiContactsLine } from "react-icons/ri";
 import Seecontact from "./Seecontact";
 import imageUrls from "../../Data/imageUrls";
+import CountUp from 'react-countup';
 
 export default function Hero() {
   const [OpenSetSeeContact, setOpenSeeContact] = useState(false);
@@ -45,22 +46,30 @@ export default function Hero() {
               <div className="absolute flex items-end gap-5 top-[88%] right-0 justify-end p-4  myblicker">
 
                 <div className="flex flex-col text-blue-600 items-center">
-                  <h1 className="text-xl font-bold">20+</h1>
+                  <h1 className="text-xl font-bold">
+                  <CountUp end={20} suffix="+" duration={9}/>
+                  </h1>
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
                 <div className="flex flex-col text-blue-600 items-center">
-                  <h1 className="text-xl font-bold">20+</h1>
+                  <h1 className="text-xl font-bold">
+                  <CountUp end={5000} suffix="+" duration={13}/>
+                  </h1>
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
                 <div className="flex flex-col text-blue-600 items-center">
-                  <h1 className="text-xl font-bold">20+</h1>
+                  <h1 className="text-xl font-bold">
+                  <CountUp end={905} suffix="+" duration={12}/>
+                  </h1>
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
                 <div className="flex flex-col text-blue-600 items-center">
-                  <h1 className="text-xl font-bold">20+</h1>
+                  <h1 className="text-xl font-bold">
+                  <CountUp end={905} suffix="+" duration={11}/>
+                  </h1> 
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
               </div>
