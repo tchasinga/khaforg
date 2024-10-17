@@ -1,10 +1,10 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import { TypingAnimation } from "../../animation/typinganimation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import newImgCartoon from '../../Images/Kitengela-Kajiado-Cou06_2024-21_45_20.png'
 import newAccentedImg from "../../Images/Groupone/CHANF-OSH-PROFILE-1-34-e1719817089149.png"
+import SparklesText from "../../animation/SparklesText";
 
 export default function Aboutus() {
  
@@ -36,8 +36,8 @@ export default function Aboutus() {
 
   return (
     <div className="py-[3%] max-w-screen-xl mx-auto">
-      <div className="text-3xl  font-bold text-blue-600">
-        <TypingAnimation text="learn more about us" />
+      <div className="text-3xl uppercase  font-bold text-blue-600">
+      <SparklesText text="Lern more about us" />
         <hr className="w-20" />
       </div>
 
