@@ -43,7 +43,7 @@ export default function Hero() {
               </div>
 
               {/* my new side of design */}
-              <div className="absolute flex items-end gap-5 top-[88%] right-0 justify-end p-4  myblicker">
+              <div className="absolute flex items-end gap-5 top-[88%] rounded-tl-3xl right-0 justify-end p-4  myblicker">
 
                 <div className="flex flex-col text-blue-600 items-center">
                   <h1 className="text-xl font-bold">
