@@ -7,7 +7,7 @@ const reviews = [
     name: "Tsongo (Tshisola) Mira",
     username: "@Tsongo",
     body: "I am thoroughly impressed by this; it exceeds my expectations. I absolutely appreciate the excellence of this work.",
-    img: "https://media.licdn.com/dms/image/v2/D4D03AQHZTdipI6yGvg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723556477421?e=1729123200&v=beta&t=0l1jWNZ8cVYI9GOqgnQoKdXBjwVBL9ES3NSOLyrCUJc",
+    img: "https://i.pinimg.com/736x/9a/8b/32/9a8b32bf563a427bd59db37208ce7115.jpg",
   },
   {
     name: "Benjamin Kisenge",
