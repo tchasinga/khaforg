@@ -47,3 +47,9 @@
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 25px; /* Increased gap for better spacing */
 }
+
+.mygridtemplateTwoIng {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px; /* Increased gap for better spacing */
+}
