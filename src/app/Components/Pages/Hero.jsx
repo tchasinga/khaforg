@@ -54,21 +54,21 @@ export default function Hero() {
 
                 <div className="flex flex-col text-blue-600 items-center">
                   <h1 className="text-xl font-bold">
-                  <CountUp end={5000} suffix="+" duration={13}/>
+                  <CountUp end={95} suffix="+" duration={13}/>
                   </h1>
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
                 <div className="flex flex-col text-blue-600 items-center">
                   <h1 className="text-xl font-bold">
-                  <CountUp end={905} suffix="+" duration={12}/>
+                  <CountUp end={100} suffix="+" duration={12}/>
                   </h1>
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
 
                 <div className="flex flex-col text-blue-600 items-center">
                   <h1 className="text-xl font-bold">
-                  <CountUp end={905} suffix="+" duration={11}/>
+                  <CountUp end={150} suffix="+" duration={11}/>
                   </h1> 
                   <p className="font-semibold text-sm">Best achivement</p>
                 </div>
