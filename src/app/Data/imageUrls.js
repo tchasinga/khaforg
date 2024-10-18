@@ -6,13 +6,13 @@ const imageUrls = [
       "Our compassionate team is dedicated to ensuring your comfort and well-being every step of the way.",
   },
   {
-    url: "https://images.pexels.com/photos/207601/pexels-photo-207601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    url: "https://firebasestorage.googleapis.com/v0/b/blogs-sharing.appspot.com/o/pexels-ivan-samkov-4989141.jpg?alt=media&token=993ad2ac-751d-41e5-88e8-9e84c49afa0c",
     title: "Healing Environment",
     description:
       "Experience a peaceful atmosphere that promotes healing and relaxation during your recovery.",
   },
   {
-    url: "https://images.pexels.com/photos/9574332/pexels-photo-9574332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    url: "https://firebasestorage.googleapis.com/v0/b/blogs-sharing.appspot.com/o/pexels-tima-miroshnichenko-5452186.jpg?alt=media&token=15286330-2a2d-4e59-bb60-e4fd5a660ce7",
     title: "Supportive Community",
     description:
       "Join a caring community that supports your journey to health and wellness.",
