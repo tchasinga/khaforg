@@ -31,7 +31,7 @@
   animation-duration: 4.5s;
 } */
 
-.spining {
+/* .spining {
   animation: spin 5s linear infinite;
 }
 
@@ -39,7 +39,7 @@
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .mygridtemplate {
   display: grid;
