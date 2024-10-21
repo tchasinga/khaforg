@@ -1,55 +1,63 @@
 import Image from "next/image";
 import { cn } from "../../../lib/utils";
-import Marquee from "../../animation/marquee";
+import Marquee from "../../animation/magicui/marquee";
 
 const reviews = [
   {
     name: "Tsongo (Tshisola) Mira",
     username: "@Tsongo",
     body: "I am thoroughly impressed by this; it exceeds my expectations. I absolutely appreciate the excellence of this work.",
-    img: "https://media.licdn.com/dms/image/v2/D4D03AQHZTdipI6yGvg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723556477421?e=1729123200&v=beta&t=0l1jWNZ8cVYI9GOqgnQoKdXBjwVBL9ES3NSOLyrCUJc",
+    img: "https://i.pinimg.com/enabled_lo/564x/c9/2c/ca/c92cca5b7d345133770ce6742f86a39b.jpg",
+    rating: 5, // Add a rating property
   },
   {
     name: "Benjamin Kisenge",
     username: "@Kisenge",
     body:"I am deeply impressed by this work, it surpasses my expectations. I truly value the exceptional quality and excellence demonstrated.",
-    img: "https://media.licdn.com/dms/image/v2/D4D35AQF537cb-jwO5A/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1690884162923?e=1724252400&v=beta&t=Ky7lm1vwF3qudF3kXfh9A0Q9icFBzB-aVxTbQt1L67g",
+    img: "https://i.pinimg.com/enabled_lo/564x/be/06/6d/be066d7cf3d4c686e409dfd334de434f.jpg",
+    rating: 5,
   },
   {
     name: "Eloghene (geekelo) Otiede",
     username: "@geekelo",
     body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://media.licdn.com/dms/image/C4E03AQFEJHEJKBCFWg/profile-displayphoto-shrink_800_800/0/1658831715875?e=1729123200&v=beta&t=ZrX_FgnJ_DLwn96zf0zbk16qXsYEO0tchYurAuqUiqE",
+    img: "https://i.pinimg.com/564x/02/62/cf/0262cf9e97b1471680a08825ada89418.jpg",
+    rating: 5,
   },
   {
     name: "El Dixer",
     username: "@ElDixer",
     body: "Words cannot fully capture my admiration for this. It is exceptional, and I am genuinely thrilled with the result.",
-    img: "https://media.licdn.com/dms/image/v2/D4D03AQHUQ1xGo58wsA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1687465055150?e=1729123200&v=beta&t=u_BCIgT34ESRXTjMLfQDK5imEqO9TjgKt0N-H2nGrPo",
+    img: "https://i.pinimg.com/564x/02/62/cf/0262cf9e97b1471680a08825ada89418.jpg",
+    rating: 5,
   },
   {
     name: "Arnold Sibita",
     username: "@Sibita",
     body: "I am truly impressed and at a loss for words. This is outstanding, and I am extremely pleased with it.",
-    img: "https://media.licdn.com/dms/image/D4D03AQGQMygYi0753A/profile-displayphoto-shrink_800_800/0/1721858116242?e=1729123200&v=beta&t=Y-pj9pkUExKBFtd3rFFGQMIoZAssxW6SiOVWGd1y-qw",
+    img: "https://i.pinimg.com/564x/6c/b6/b3/6cb6b30f42ef6cec9ff2e7e2c25bde58.jpg",
+    rating: 5,
   },
   {
     name: "Jonathan Z",
     username: "@JonathanZ",
     body: "I am utterly speechless. This is exceptional, and I am genuinely delighted with the result",
-    img: "https://media.licdn.com/dms/image/C4E03AQENTdcRviwSHA/profile-displayphoto-shrink_800_800/0/1640814336093?e=1729123200&v=beta&t=c5aYxPPVM0FT3dChcXha_dzl70RLWaSMUiESyrDA9tI",
+    img: "https://i.pinimg.com/564x/52/b9/66/52b9664dcd88b9291ac2399a8d22ef43.jpg",
+    rating: 5,
   },
   {
     name: "Joel Kalema",
     username: "@JKalema",
     body: "I am profoundly impressed. This is outstanding, and I am very pleased with the outcome.",
-    img: "https://media.licdn.com/dms/image/v2/D4D03AQGRJrS9sT2hBQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1685740141403?e=1729123200&v=beta&t=q3ixaA3NuRT0A2fDoRQIH4dgCVqW3anzk5VZo1BBlbo",
+    img: "https://i.pinimg.com/564x/52/b9/66/52b9664dcd88b9291ac2399a8d22ef43.jpg",
+    rating: 5,
   },
   {
     name: "Tumaini Maganiko",
     username: "@Maganiko",
     body: "I am completely astounded. This is extraordinary, and I am thoroughly impressed with the results.",
-    img: "https://media.licdn.com/dms/image/D4D03AQEshqA4oHIYBQ/profile-displayphoto-shrink_800_800/0/1714038633177?e=1729123200&v=beta&t=3CfIQcQlcYKGKlcpmQWwVhAoOe3IXmP-7mrfuUFJ23c",
+    img: "https://i.pinimg.com/enabled_lo/564x/c9/2c/ca/c92cca5b7d345133770ce6742f86a39b.jpg",
+    rating: 5,
   },
 ];
 
@@ -61,6 +69,7 @@ const ReviewCard = ({
   name,
   username,
   body,
+  rating, // Add rating prop
 }) => {
   return (
     <figure
@@ -82,13 +91,26 @@ const ReviewCard = ({
         </div>
       </div>
       <blockquote className="mt-2 text-sm line-clamp-3">{body}</blockquote>
+      {/* Add star rating */}
+      <div className="mt-2 flex gap-1">
+        {[...Array(rating)].map((_, index) => (
+          <svg
+            key={index}
+            className="h-4 w-4 text-yellow-500"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 .587l3.668 7.431 8.195 1.187-5.92 5.764 1.394 8.174L12 18.897l-7.337 3.85 1.394-8.174-5.92-5.764 8.195-1.187L12 .587z" />
+          </svg>
+        ))}
+      </div>
     </figure>
   );
 };
 
 export default function MarqueeDemo() {
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg  bg-background ">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background ">
       <Marquee pauseOnHover className="[--duration:20s]">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

@@ -7,13 +7,25 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      animation: {
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+      },
+      boxShadow: {
+        "custom-light": "0 4px 6px rgba(255, 255, 255, 0.1)",
+        "custom-dark": "0 4px 6px rgba(0, 0, 0, 0.9)",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [],
 };
